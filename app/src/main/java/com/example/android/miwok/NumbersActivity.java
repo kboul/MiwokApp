@@ -34,18 +34,14 @@ public class NumbersActivity extends AppCompatActivity {
         //Find the LinearLayout rootView and store it in a variable
         LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
 
-        /**
-        *  Create dynamically a TextView in Java code
-        **/
-        int index = 0;
-        while(index < words.size()) {
-
+        //Create dynamically TextViews in Java code
+        for (int i = 0; i < words.size(); i++) {
+            //Create a new TextView
             TextView wordView = new TextView(this); //this refers to the NumberActivity class
-            wordView.setText(words.get(index));
+            //Set the text to be the word at the current index
+            wordView.setText(words.get(i));
+            //Add this TextView as another child to the root view of this layout
             rootView.addView(wordView);
-
-            //Update counter variable
-            index++;
         }
     }
 }
