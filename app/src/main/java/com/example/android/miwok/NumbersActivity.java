@@ -27,7 +27,7 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(new Word("ten", "na'aacha", R.drawable.number_ten));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_numbers);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         ListView listView = (ListView) findViewById(R.id.list);

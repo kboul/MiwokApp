@@ -27,7 +27,7 @@ public class FamilyActivity extends AppCompatActivity {
         words.add(new Word("grandfather","paapa",R.drawable.family_grandfather));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_family);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         ListView listView = (ListView) findViewById(R.id.list);
