@@ -16,12 +16,15 @@ public class Word {
     private String mMiwokTranslation;
 
     //Store image resource id to associate icon with word
-    private int mImageResourceId;
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
+
+    private static final int NO_IMAGE_PROVIDED = -1;
 
     /**
      * Constructor which takes in two string parameters
+     *
      * @param defaultTranslation is the word in a English language
-     * @param miwokTranslation is the word in Miwok language
+     * @param miwokTranslation   is the word in Miwok language
      */
     public Word(String defaultTranslation, String miwokTranslation) {
         mDeafaultTranslation = defaultTranslation;
@@ -30,9 +33,10 @@ public class Word {
 
     /**
      * Constructor which takes in two string parameters and one image resource id
+     *
      * @param defaultTranslation is the word in a English language
-     * @param miwokTranslation is the word in Miwok language
-     * @param imageResourceID is the drawable resource id of the image associated with the word
+     * @param miwokTranslation   is the word in Miwok language
+     * @param imageResourceID    is the drawable resource id of the image associated with the word
      */
     public Word(String defaultTranslation, String miwokTranslation, int imageResourceID) {
         mDeafaultTranslation = defaultTranslation;
@@ -59,5 +63,12 @@ public class Word {
      */
     public int getImageResourceID() {
         return mImageResourceId;
+    }
+
+    /*
+     * Returns whether or not there is an image for this word
+     */
+    public boolean hasImage() {
+        return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 }
