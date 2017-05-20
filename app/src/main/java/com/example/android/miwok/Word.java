@@ -13,6 +13,9 @@ public class Word {
     //Miwok translation for the word
     private String mMiwokTranslation;
 
+    //Store image resource id to associate icon with word
+    private int mImageResourceId;
+
     //Constructor which takes in two string parameters
     public Word(String defaultTranslation, String miwokTranslation) {
         mDeafaultTranslation = defaultTranslation;
@@ -31,5 +34,12 @@ public class Word {
      */
     public String getMiwokTranslation() {
         return mMiwokTranslation;
+    }
+
+    /**
+     * Get the image resource id of the word
+     */
+    public int getImageResourceID() {
+        return mImageResourceId;
     }
 }
