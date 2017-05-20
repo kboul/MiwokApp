@@ -14,7 +14,7 @@ public class Word {
     private String mMiwokTranslation;
 
     //Constructor which takes in two string parameters
-    public Word(String defaultTranslation, String miwokTranslation){
+    public Word(String defaultTranslation, String miwokTranslation) {
         mDeafaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
     }
@@ -22,14 +22,14 @@ public class Word {
     /**
      * Get the default translation of the word
      */
-    public String getDefaultTranslation(){
+    public String getDefaultTranslation() {
         return mDeafaultTranslation;
     }
 
     /**
      * Get the Miwok translation of the word
      */
-    public String getMiwokTranslation(){
+    public String getMiwokTranslation() {
         return mMiwokTranslation;
     }
 }

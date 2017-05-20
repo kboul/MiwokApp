@@ -33,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Find the view that shows the Number category
         TextView numbers = (TextView) findViewById(R.id.numbers);
-        numbers.setOnClickListener(new View.OnClickListener(){
+        numbers.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
                 startActivity(numbersIntent);
             }
@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Find the view that shows the Family category
         TextView family = (TextView) findViewById(R.id.family);
-        family.setOnClickListener(new View.OnClickListener(){
+        family.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
                 startActivity(familyIntent);
             }
@@ -53,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Find the view that shows the Family category
         TextView colors = (TextView) findViewById(R.id.colors);
-        colors.setOnClickListener(new View.OnClickListener(){
+        colors.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
                 startActivity(colorsIntent);
             }
@@ -63,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Find the view that shows the Phrases category
         TextView phrases = (TextView) findViewById(R.id.phrases);
-        phrases.setOnClickListener(new View.OnClickListener(){
+        phrases.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
                 startActivity(phrasesIntent);
             }
