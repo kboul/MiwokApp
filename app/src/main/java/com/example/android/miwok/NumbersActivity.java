@@ -40,6 +40,7 @@ public class NumbersActivity extends AppCompatActivity {
         // Make the {@link ListView} use the {@link ArrayAdapter} we created above
         listView.setAdapter(adapter);
 
+        // Implement an OnClickListener so that the number_one.mp3 file is played when the user touches any list item
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
