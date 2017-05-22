@@ -1,6 +1,7 @@
 package com.example.android.miwok;
 
 import android.app.Activity;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 
 public class ColorsActivity extends AppCompatActivity {
 
+    // Handles playback for all the sound files
     private MediaPlayer mMediaPlayer;
 
     //Move code that implements the onCompletionListener interface to a global variable
